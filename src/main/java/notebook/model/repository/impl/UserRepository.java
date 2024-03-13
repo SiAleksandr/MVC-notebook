@@ -78,7 +78,7 @@ public class UserRepository implements GBRepository {
         int i = 0;
         for (User u: users) {
             if (u.getId().equals(id)) {
-                u.setFirstName(null);  //а в методе write учловие  if (!u.getFirstName().equals(null))
+                u.setFirstName(null);  //а в методе write учловие   if (u.getFirstName() != null)
                 u.setLastName(null);   //для занесения в список List<String> lines
                 u.setPhone(null);
                 i++;
